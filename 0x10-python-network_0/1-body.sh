@@ -1,3 +1,3 @@
-#!/bin/bash                                                                   
-# a Bash script that takes in a URL, sends a GET request to the URL, and displays the body of the response                                                  
-if [ "$(curl -sLI "$1" -X GET | grep "200 OK" | cut -d' ' -f2)" = '200' ]; then curl -sL "$1"; fi
+#!/bin/bash
+# Get the response body for a given URL for 200 status code responses.
+curl -sL "$1"
