@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-for hexanum in range(0, 99):
-    print("{} = {}".format(hexanum, hex(hexanum)))
+# Author - Godswill Kalu
+
+"""Print numbers 0 to 98 in decimal and hexadecimal."""
+for number in range(0, 99):
+    print("{} = {}".format(number, hex(number)))

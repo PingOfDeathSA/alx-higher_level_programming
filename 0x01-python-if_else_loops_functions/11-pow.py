@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-def pow(a, b):
-    return a ** b
+# Author -Godswill Kalu
 
-#calling delf
-result = pow(2, 3)
-print(result)
+def pow(a, b):
+    return (a ** b)

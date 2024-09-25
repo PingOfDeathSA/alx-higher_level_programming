@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for sepnum_by_coma in range(0, 100):
-    if sepnum_by_coma == 99:
-        print("{}".format(sepnum_by_coma))
+for number in range(0, 100):
+    if number == 99:
+        print("{}".format(number))
     else:
-        print("{:02}".format(sepnum_by_coma), end=", ")
+        print("{:02}".format(number), end=", ")

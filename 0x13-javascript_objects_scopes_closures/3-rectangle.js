@@ -1,20 +1,21 @@
 #!/usr/bin/node
-module.exports = class Rectangle {
+class Rectangle {
   constructor (w, h) {
-    if ((w <= 0) || (h <= 0) || !h || !w) {
-      return this;
+    if ((w > 0) && (h > 0)) {
+      this.width = w;
+      this.height = h;
     }
-    this.width = w;
-    this.height = h;
   }
 
   print () {
     for (let i = 0; i < this.height; i++) {
-      let row = '';
+      let s = '';
       for (let j = 0; j < this.width; j++) {
-        row += 'X';
+        s += 'X';
       }
-      console.log(row);
+      console.log(s);
     }
   }
-};
+}
+
+module.exports = Rectangle;
